@@ -10,7 +10,7 @@ function Level1({ message }) {
       <h3>Level 1</h3>
       <Level2 message={message} />
     </LevelContainer>
-  );
+  )
 }
 
 function Level2({ message }) {
