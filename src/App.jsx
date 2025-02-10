@@ -6,7 +6,7 @@ import {
   DeepStructure,
 } from "./styles/StyledComponents";
 import { Provider } from "react-redux";
-import {store} from "./redux/store"
+import { store } from "./redux/store";
 
 // prop drilling 브랜치
 function App() {

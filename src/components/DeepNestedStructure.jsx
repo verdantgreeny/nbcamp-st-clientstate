@@ -1,7 +1,4 @@
-import PropTypes from "prop-types";
-import { useContext } from "react";
 import { useSelector } from "react-redux";
-import { MessageContext } from "../contexts/MessageContext";
 import {
   LevelContainer,
   MessageDisplayWrapper,
@@ -35,7 +32,7 @@ function Level3() {
 }
 
 function MessageDisplay() {
-  const  message = useSelector((state)=> state.message.text);
+  const message = useSelector((state) => state.message.text);
   return (
     <MessageDisplayWrapper>
       <h3>메시지 표시 영역</h3>
