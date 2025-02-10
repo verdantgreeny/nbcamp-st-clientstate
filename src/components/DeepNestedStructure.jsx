@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { useContext } from "react";
 import { MessageContext } from "../contexts/MessageContext";
 import {
