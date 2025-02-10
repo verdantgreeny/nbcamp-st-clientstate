@@ -13,7 +13,7 @@ function App() {
   return (
     <Provider store={store}>
       <AppContainer>
-        <h2>[내배캠] 스탠다드반 프로젝트 - Prop Drilling 예제</h2>
+        <h2>[내배캠] 스탠다드반 프로젝트 - rtk 예제</h2>
         <Content>
           <StateControl />
           <DeepStructure>
