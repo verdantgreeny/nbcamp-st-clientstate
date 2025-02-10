@@ -10,7 +10,7 @@ import {
 function App() {
   return (
     <AppContainer>
-      <h2>[내배캠] 스탠다드반 프로젝트 - Prop Drilling 예제</h2>
+      <h2>[내배캠] 스탠다드반 프로젝트 - context API 예제</h2>
       <Content>
         <StateControl />
         <DeepStructure>
