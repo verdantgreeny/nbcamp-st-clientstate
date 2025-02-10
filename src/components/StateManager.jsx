@@ -1,25 +1,27 @@
 import { useContext, useState } from "react";
+import { useDispatch } from "react-redux";
+import { resetMessage } from "../redux/messageSlice";
 import {
   StateControlWrapper,
   StyledInput,
   StyledButton,
   ButtonGroup,
 } from "../styles/StyledComponents";
-import { MessageContext} from "../contexts/MessageContext";
+
 
 function StateControl() {
   const [inputValue, setInputValue] = useState("");
-  const  {setMessage}  = useContext(MessageContext);
+const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(inputValue);
+    dispatch(setMessage(inputValue));
     setInputValue("");
   };
 
   const handleReset = () => {
     setInputValue("");
-    setMessage("");
+    dispatch(resetMessage());
   };
 
   return (
